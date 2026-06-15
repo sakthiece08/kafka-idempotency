@@ -1,0 +1,1 @@
+alter table if exists orders add constraint unique_order_id unique (order_id);
