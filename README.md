@@ -73,4 +73,4 @@ We implemented above **_DB unique constraint approach_** in this project using f
 
 In the first attempt the acknowledge was not provided to the kafka and hence the message was reprocessed multiple times, but due to the unique constraint on the order_id column, it prevented duplicate entries in the database and threw an exception instead. This is how we can implement idempotency in Kafka-based messaging systems to ensure data integrity and reliability.
 
-![Kafka](images/kafka.png)
+![Kafka](images/kafka_arc.png)
